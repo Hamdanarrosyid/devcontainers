@@ -1,0 +1,30 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		"--gpus=all",
+		"--ipc=host",
+		"--ulimit=memlock=-1",
+		"--ulimit=stack=67108864"
+	],
+
+	// data mount point only if needed
+	"mounts": [
+		"source=/home/hamdan/Github/torch-env/dataset-test,target=/workspaces/auto-label/data,type=bind,consistency=cached"
+	],
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cmake-tools"
+			]
+		}
+	},
+
+	"remoteUser": "root"
+}
