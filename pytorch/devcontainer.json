@@ -11,7 +11,7 @@
 
 	// data mount point only if needed
 	"mounts": [
-		"source=/home/hamdan/Github/torch-env/dataset-test,target=/workspaces/auto-label/data,type=bind,consistency=cached"
+		"source=/home/{local_name}/source,target=/workspaces/target/data,type=bind,consistency=cached"
 	],
 
 	"customizations": {
