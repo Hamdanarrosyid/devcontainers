@@ -1,4 +1,5 @@
 {
+	"name": "cudnn-devel-ubuntu22.04",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
